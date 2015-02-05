@@ -4,7 +4,7 @@ var greeting = "Ohai";
 console.log(greeting);
 
 var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "New Direction"];
-var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
+var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash", "tomato", "apple"];
 
 // The number of loops to perform (what if the array changes?)
 var loopCount = 5;
@@ -33,5 +33,7 @@ for (; loopTracker < loopCount; loopTracker += 1) {
   
   // Add the veggie names into the correct <div>
   currentVeggie = vegetables[loopTracker];
-  veggieElement.innerHTML = currentVeggie;
+  veggieElement.innerHTML += "<p>" + currentVeggie + "</p>";
+
+  console.log(currentVeggie);
 }
